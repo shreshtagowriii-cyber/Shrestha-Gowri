@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Online Registration Form</h2>
+        <form action="process.php" method="POST" id="regForm">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <label>Phone:</label>
+            <input type="text" name="phone" required>
+            <label>Address:</label>
+            <textarea name="address" required></textarea>
+            <label>Course:</label>
+            <select name="course">
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>BSc CS</option>
+                <option>MSc CS</option>
+            </select>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
